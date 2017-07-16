@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sweets</title>
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="h-top-block"></div>
+    <header class="container">
+      <div class="container">
+        <a href="#">
+          <img class="epark-logo" src="img/鯈빞숪渧.png">
+        </a>
+        <p>このサイトのキャッチコピーが入りますああああああああああああ</p>
+        <div class="right-header">
+          <div class="epark-search-top">
+            <input type="text" name="" placeholder="店名・商品名で検索">
+            <button class="btn-search"></button>
+          </div>
+          <ul class="epark-right-menu">
+            <li><a href="#"><span class="login">ログイン</a></span></li>
+            <li><a href="#"><span class="plug">新規登録</span></a></li>
+          </ul>  
+          </div>
+        </div>
+    </header>
+    <section class="pc-container">
+      <div class="container">
+        <ul>
+          <li><a href="#">EPARKスイーツガイド</a></li>
+          <li><a href="#">マイページ</a></li>
+          <li><a href="#">会員情報</a></li>
+          <li><a href="#">会員情報の変更</a></li>
+        </ul>
+        <div class="epark-content">
+          <h1 class="border-bottom-dotted browser">会員情報の変更</h1>
+          <h3 class="border-bottom-dotted browser">変更内容の入力<span>※</spanの項目は必ず入力してください。></h3>
+          <form name="information">
+            <div class="epark-form-content">
+              <table class="epark-table">
+                <tr class="border-bottom-dotted browser">
+                  <th>EPARK会員連携</th>
+                  <th>てログイン済</th>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>会員ID <span>※</span></td>
+                  <td>
+                    <input type="radio" name="member-id" id="member-1"><label class="radio-green" for="member-1">メールアドレスを使用する</label>
+                    <input type="radio" name="member-id" id="member-2"><label class="radio-green" for="member-2">メールアドレスを使用しない（メールアドレス以外のIDを指定する）</label>
+                    <input type="text" name="email" placeholder="hogehoge@gmail.com">
+                    <div class="alert alert-danger alert-email"></div>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>お名前</td>
+                  <td>
+                    <label>お名前</label>
+                    <input type="text" name="" placeholder="姓">
+                    <input type="text" name="" placeholder="名"><br>
+                    <label >お名前（かな）</label>
+                    <input type="text" name="" placeholder="せい">
+                    <input type="text" name="" placeholder="めい"><br>
+                    <label >ニックネーム</label>
+                    <input type="radio" name="nickname" id="nickname1">
+                    <label class="radio-green" for="nickname1">お名前を使用する</label>
+                    <input type="radio" name="nickname" id="nickname2">
+                    <label class="radio-green" for="nickname2">お名前を使用しない（ニックネームを指定する）</label>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted arow" id="datetime">
+                  <td>生年月日</td>
+                  <td>
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type='text' class="form-control" placeholder="1974/03/10" />
+                      <span class="input-group-addon">
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>性別</td>
+                  <td>
+                    <input type="radio" name="gender" id="gender1"><label class="radio-green" for="gender1">男性</label>
+                    <input type="radio" name="gender" id="gender2"><label class="radio-green" for="gender2">女性</label>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>連絡先登録名</td>
+                  <td>
+                    <input type="radio" name="contact-name" id="contact-name1"><label class="radio-green" for="contact-name1">自宅</label>
+                    <input type="radio" name="contact-name" id="contact-name2"><label class="radio-green" for="contact-name2">勤務先</label>
+                    <input type="radio" name="contact-name" id="contact-name3"><label class="radio-green" for="contact-name3">その他</label>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>郵便番号</td>
+                  <td>
+                    <input type="text" name="" class="num-code1"><span>ー</span>
+                    <input type="text" name="" class="num-code2">
+                    <button class="btn-search-address">住所検索</button><br>
+                    <span class="exemple">例</span><span>123-4567</span><span>郵便番号からご住所を自動入力できます。</span>
+                    <div class="alert alert-danger alert-code">Code is invalid!!!</div>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>都道府県</td>
+                  <td>
+                    <select>
+                      <option class="option1">都道府県</option>
+                      <option class="option2">都道府県</option>
+                      <option class="option3">都道府県</option>
+                      <option class="option4">都道府県</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser" id="botton-1">
+                  <td>市区郡</td>
+                  <td>
+                    <input type="text" name="city-or-country" placeholder="市区郡">
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser" id="botton-2">
+                  <td>町村字番地</td>
+                  <td>
+                    <input type="text" name="" placeholder="町村字番地">
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser" id="botton-3">
+                  <td>建物名</td>
+                  <td>
+                    <input type="text" name="" placeholder="建物名">
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser" id="botton-4">
+                  <td>電話番号</td>
+                  <td>
+                    <input type="text" placeholder="090-0000-0000" name="phone-number"><br>
+                    <span>例&nbsp;&nbsp;0312345678&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※半角数字（ハイフンなし）</span>
+                    <div class="alert alert-danger alert-phone">Phone Number invalid!!!</div>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser" id="checkbox">
+                  <td>会員登録前アンケート</td>
+                  <td>
+                    <p>スイーツガイドを何で知りましたか？</p>
+                    <div class="l-border">
+                      <input type="checkbox" name="" id="checkbox1"><label class="checkbox-green " for="checkbox1">インターネット</label><br>
+                    <input type="checkbox" name="" id="checkbox2"><label class="checkbox-green" for="checkbox2">SNS</label><br>
+                    <input type="checkbox" name="" id="checkbox3"><label class="checkbox-green" for="checkbox3">クチコミ</label> <br>
+                    </div>
+                    <div class="r-border">
+                      <input type="checkbox" name="" id="checkbox4"><label class="checkbox-green" for="checkbox4">雑誌（ブランドJOY）</label><br>
+                    <input type="checkbox" name="" id="checkbox5"><label class="checkbox-green" for="checkbox5">店舗</label><br>
+                    <input type="checkbox" name="" id="checkbox6"><label class="checkbox-green" for="checkbox6">その他</label><br>  
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-bottom-dotted browser">
+                  <td>メール情報配信</td>
+                  <td>
+                    <input type="radio" name="mail-info-delivery" id="mail-info-delivery1"><label class="radio-green" for="mail-info-delivery1">受け取る</label>
+                    <input type="radio" name="mail-info-delivery" id="mail-info-delivery2"><label class="radio-green" for="mail-info-delivery2">受け取らない</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          <div class="alert-bottom">
+            <p>変更された情報はEPARK会員情報にも反映されます。</p>
+          </div>
+          <div class="btn-update">
+            <button>戻る</button>
+            <button type="submit" id="infomation-member">会員情報を変更する</button>
+          </div>  
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="pc-container">
+        <div id="epark-global-footer-box">
+              <div class="epark-global-footer-box-inner">
+                <div class="epark-global-footer-group-box-container">
+                  <div class="epark-global-footer-group-title container">EPARKグループサイトはこちら</div>
+                  <div class="epark-global-footer-group-sites">
+                    <ul class="epark-global-clearfix list-inline">
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKファスパ</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARK歯科</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">運営会社</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKくすりの窓口</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKヘアサロン</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKリラク＆エステ</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKからだリ</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARK携帯ショップ予約</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKネイル＆まつげ</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARK人間ドック</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKペットライフ</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPARKクリニック・病院</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">EPAARK</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">運営会社</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">プライバシーポリシー</a>｜</li>
+                      <li><a href="#" target="_blank" rel="nofollow">会員規約</a>｜</li>
+                    </ul>
+                  </div>
+                <ul class="pc-f-block list-inline">
+                    <li><a href="#" target="_blank">EPARK</a>｜</li>
+                    <li><a href="#">プライバシーポリシー</a> ｜ </li>
+                    <li><a href="#">運営会社</a> ｜ </li>
+                    <li><a target="__blank" href="#">会員規約</a> ｜ </li>
+                    <li><a href="#">利用規約</a> ｜ </li>
+                    <li><a href="#">掲載ご希望のスイーツ店様はこちら</a></li>
+                </ul>
+                 <p>Copyright(c) 2015 Sweetsguide.jp All Rights Reserved.</p>
+              </div>
+            </div>
+          <div class="container-1">
+            <p class="pagetop"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/moment.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/src/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+      Validate.init();
+    </script>
+  </body>
+</html>
