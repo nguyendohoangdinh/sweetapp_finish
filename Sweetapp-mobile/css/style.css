@@ -432,4 +432,9 @@ footer #pagetop {
     right: 16px;
     text-transform: uppercase; }
 
+.alert {
+  width: 530px;
+  margin-left: 30px;
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

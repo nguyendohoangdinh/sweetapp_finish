@@ -103,9 +103,10 @@
         </div>
         <div class="number-serial">
           <p class="title-id">郵便番号</p>
-          <input type="text" name=""><span>ー</span><input type="text" name="">
+          <input type="text" name="" class="num-code1"><span>ー</span><input type="text" name="" class="num-code2">
           <button>住所検索</button>
           <p>郵便番号からご住所を自動入力できます。</p>
+          <div class="alert alert-danger alert-code">Code is invalid!!!</div>
         </div>
         <div class="address-brow">
           <p class="title-id">ご住所</p>
@@ -176,7 +177,7 @@
       </div>
       <div class="btn-register">
         <button>戻る</button>
-        <button>会員情報を変更する</button>
+        <button type="submit" id="infomation-member">会員情報を変更する</button>
       </div>
     </div>
   </section>      
@@ -211,5 +212,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/src/js/bootstrap-datetimepicker.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+      Validate.init();
+    </script>
 </body>
 </html>
