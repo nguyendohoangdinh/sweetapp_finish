@@ -591,7 +591,7 @@ footer {
     text-align: center;
     position: relative; }
   footer .pc-f-block {
-    margin-top: 23px;
+    margin-top: 20px;
     text-align: center; }
   footer .title-footer {
     font-weight: bold;
@@ -599,12 +599,6 @@ footer {
     margin-top: 23px;
     margin-bottom: 7px;
     border-bottom: 2px solid #936945;
-    color: #936945; }
-  footer p {
-    text-align: center;
-    font-size: 10px;
-    padding-bottom: 10px;
-    padding-top: 28px;
     color: #936945; }
   footer .pagetop {
     background: url(../img/Pagetop.png) center center no-repeat;
@@ -618,6 +612,12 @@ footer {
     cursor: pointer;
     float: right;
     margin-right: 80px; }
+  footer p {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 18px;
+    color: #936945;
+    margin: 0; }
 
 .alert {
   width: 530px;

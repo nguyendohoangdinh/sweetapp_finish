@@ -1,4 +1,4 @@
-.border-input, .brow-content .check-radio, .brow-content .tick-radio, .brow-content .name-register .id-register .content-name input, .id-class input[type="text"], .time-day input[type="text"], .number-serial input[type="text"], .address-brow input[type="text"], .address-brow select, .phone-brow input[type="text"], .option-brow .checkbox-row {
+.border-input, .brow-content .id-register .content-id input, .brow-content .check-radio, .brow-content .tick-radio, .id-class input[type="text"], .time-day input[type="text"], .number-serial input[type="text"], .address-brow input[type="text"], .address-brow select, .phone-brow input[type="text"], .option-brow .checkbox-row {
   border: 1px solid #a8a8a8;
   border-radius: 4px; }
 
@@ -15,11 +15,15 @@
   color: #888;
   font-weight: bold; }
 
-/*.lable-def{
-  font-size: 22px;
-  color: $font-color;
-}*/
+.weight-box, .brow-content {
+  width: 560px;
+  margin: 0 auto; }
+
+* {
+  font-family: TakaoPGothic; }
+
 header {
+  background-color: #f9fcff;
   height: 110px;
   border-bottom: 2px solid #c3000b;
   background: url("../img/background.png") no-repeat; }
@@ -27,13 +31,14 @@ header {
     height: 60px;
     width: 150px;
     margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: 20px; }
   header .right-menu {
     width: 200px;
     float: right;
     margin-top: 40px;
     padding-left: 60px;
-    margin-right: 20px; }
+    margin-right: 40px; }
     header .right-menu ul {
       list-style: none; }
       header .right-menu ul li {
@@ -48,65 +53,78 @@ header {
           background: url("../img/login.png") no-repeat;
           padding: 20px 20px; }
 
+section .back-epark {
+  height: 86px;
+  border-bottom: 4px solid #916a41; }
 section .back-mobile {
   display: block;
   width: 20px;
   height: 40px;
-  margin-top: 20px;
   float: left;
-  margin-top: 30px;
-  background: url("../img/back.png") no-repeat center; }
+  margin-top: 23px;
+  background: url("../img/back.png") no-repeat center;
+  margin-bottom: 31px; }
 section .back-content {
-  display: block;
+  display: inline-block;
   width: 80px;
   float: left;
   color: #916a41;
-  font-size: 25px;
+  font-size: 25.56px;
   text-transform: uppercase;
-  margin-top: 32px;
+  margin-top: 25px;
   margin-left: 12px; }
   section .back-content + h1 {
     margin-top: 32px;
-    width: 240px;
+    line-height: 22px;
     font-size: 30px;
     margin-left: 200px;
-    color: #888; }
+    color: #333; }
 section div.title-head {
-  height: 70px;
-  border-top: 4px solid #916a41;
+  height: 64px;
   border-bottom: 4px solid #916a41; }
-  section div.title-head .button span {
-    background: url("../img/pencil.png") left no-repeat;
-    display: inline-block;
-    width: 86px;
-    height: 18px;
-    margin-top: 4px;
-    margin-left: 10px; }
   section div.title-head h1 {
     font-size: 30px;
-    margin-top: 25px;
-    color: #888;
-    float: left; }
+    margin-top: 22.5px;
+    margin-bottom: 8.5px;
+    color: #333; }
   section div.title-head button.pencil {
     float: right;
-    margin-top: 22px;
-    margin-bottom: 8px;
-    width: 86px;
-    height: 38px;
+    margin-top: -47px;
+    margin-bottom: 4px;
+    width: 84px;
+    height: 40px;
     border: none;
     background-color: #916a41;
     border-radius: 8px;
     color: #fff;
     font-size: 18px;
-    font-weight: bold;
     padding: 0; }
+    section div.title-head button.pencil img {
+      margin-top: -5px;
+      margin-right: 5px; }
 
 .brow-content {
   width: 560px;
   margin: 0 auto; }
   .brow-content p.title-register {
     color: #888;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-top: 25.5px;
+    margin-bottom: 11px; }
+  .brow-content .id-register {
+    margin-bottom: 18px; }
+    .brow-content .id-register .content-id {
+      display: inline-block; }
+      .brow-content .id-register .content-id:not(:last-child) {
+        margin-right: 16px; }
+      .brow-content .id-register .content-id span {
+        color: #888;
+        font-size: 22px; }
+      .brow-content .id-register .content-id input {
+        width: 268px;
+        height: 78px;
+        font-size: 34px;
+        color: #555; }
   .brow-content .check-radio {
     width: 560px;
     height: 78px;
@@ -121,20 +139,6 @@ section div.title-head {
       color: #888;
       margin-bottom: 20px;
       font-weight: bold; }
-    .brow-content .name-register .id-register {
-      margin-bottom: 18px; }
-      .brow-content .name-register .id-register .content-name {
-        display: inline-block; }
-        .brow-content .name-register .id-register .content-name:not(:last-child) {
-          margin-right: 16px; }
-        .brow-content .name-register .id-register .content-name span {
-          color: #888;
-          font-size: 22px; }
-        .brow-content .name-register .id-register .content-name input {
-          width: 268px;
-          height: 78px;
-          font-size: 34px;
-          color: #555; }
 
 .id-class {
   margin-top: 38px;
