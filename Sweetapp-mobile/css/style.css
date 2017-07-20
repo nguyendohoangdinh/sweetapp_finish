@@ -1,5 +1,5 @@
-.border-input, .brow-content .id-register .content-id input, .brow-content .check-radio, .brow-content .tick-radio, .id-class input[type="text"], .time-day input[type="text"], .number-serial input[type="text"], .address-brow input[type="text"], .address-brow select, .phone-brow input[type="text"], .option-brow .checkbox-row {
-  border: 1px solid #a8a8a8;
+.border-input, .brow-content .id-register .content-name input, .brow-content .check-radio, .brow-content .tick-radio, .id-class input[type="text"], .tick-brow input[type="text"], .time-day input[type="text"], .number-serial input[type="text"], .address-brow input[type="text"], .address-brow select, .mail-row input[type="text"], .phone-brow input[type="text"], .option-brow .checkbox-row {
+  border: 1px solid #888;
   border-radius: 4px; }
 
 .mobile-container {
@@ -10,12 +10,11 @@
   width: 600px;
   padding: 0; }
 
-.title, .address-brow p, .mail-row p, .phone-brow p, .option-brow p {
+.title, .address-brow p, .phone-brow p, .option-brow p {
   font-size: 22px;
-  color: #888;
-  font-weight: bold; }
+  color: #888; }
 
-.weight-box, .brow-content {
+.weight-box, .content-info, .brow-content {
   width: 560px;
   margin: 0 auto; }
 
@@ -110,133 +109,187 @@ section div.title-head {
     color: #888;
     font-size: 22px;
     margin-top: 25.5px;
-    margin-bottom: 11px; }
-  .brow-content .id-register {
-    margin-bottom: 18px; }
-    .brow-content .id-register .content-id {
-      display: inline-block; }
-      .brow-content .id-register .content-id:not(:last-child) {
-        margin-right: 16px; }
-      .brow-content .id-register .content-id span {
-        color: #888;
-        font-size: 22px; }
-      .brow-content .id-register .content-id input {
-        width: 268px;
-        height: 78px;
-        font-size: 34px;
-        color: #555; }
+    margin-bottom: 0; }
+  .brow-content .id-register .content-name {
+    display: inline-block; }
+    .brow-content .id-register .content-name:not(:last-child) {
+      margin-right: 16px; }
+    .brow-content .id-register .content-name span {
+      display: inherit;
+      color: #888;
+      font-size: 22px;
+      padding-bottom: 5.5px;
+      padding-top: 15.5px; }
+    .brow-content .id-register .content-name input {
+      width: 270px;
+      height: 80px;
+      font-size: 34px;
+      color: #555; }
   .brow-content .check-radio {
     width: 560px;
-    height: 78px;
+    height: 80px;
     border-radius: 5px; }
   .brow-content .tick-radio {
-    width: 266px;
-    height: 78px; }
+    width: 270px;
+    height: 80px; }
   .brow-content .name-register {
     margin-top: 28px; }
     .brow-content .name-register > p {
       font-size: 22px;
-      color: #888;
-      margin-bottom: 20px;
-      font-weight: bold; }
+      color: #888; }
 
 .id-class {
-  margin-top: 38px;
+  margin-top: 36.5px;
   color: #888; }
   .id-class p {
-    margin-bottom: 16px;
-    font-weight: bold;
+    margin-bottom: 14.5px;
     font-size: 22px;
     color: #888; }
   .id-class input[type="text"] {
     width: 560px;
-    height: 78px;
-    font-size: 34px; }
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px; }
   .id-class div.check-radio {
-    margin-bottom: 18px; }
+    margin-bottom: 20px; }
   .id-class label {
     font-size: 22px;
     color: #888;
     font-weight: 400; }
-  .id-class .title, .id-class .address-brow p, .address-brow .id-class p, .id-class .mail-row p, .mail-row .id-class p, .id-class .phone-brow p, .phone-brow .id-class p, .id-class .option-brow p, .option-brow .id-class p {
-    font-weight: bold;
+  .id-class .title, .id-class .address-brow p, .address-brow .id-class p, .id-class .phone-brow p, .phone-brow .id-class p, .id-class .option-brow p, .option-brow .id-class p {
     color: #888;
     font-size: 22px; }
 
+.tick-brow {
+  margin-top: 35.5px; }
+  .tick-brow p {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 14.5px; }
+  .tick-brow input[type="text"] {
+    width: 560px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .tick-brow div.tick-radio {
+    display: inline-block; }
+  .tick-brow #tick1 {
+    margin-left: 16px;
+    float: right; }
+  .tick-brow label {
+    font-size: 22px;
+    color: #888;
+    font-weight: 400; }
+
+.contact-brow {
+  font-size: 22px;
+  margin-top: 35.5px;
+  color: #888; }
+  .contact-brow p {
+    margin-bottom: 15.5px; }
+  .contact-brow div.check-radio:not(:last-child) {
+    margin-bottom: 20px; }
+
+div.green-radio .check {
+  display: block;
+  position: relative;
+  border: 2px solid #ddd;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: -60px;
+  left: 14px;
+  z-index: -5; }
+div.green-radio input[type="radio"] {
+  display: none; }
+  div.green-radio input[type="radio"] + label {
+    display: block;
+    padding: 24px 0;
+    padding-left: 60px;
+    color: #777;
+    font-size: 24px;
+    font-weight: normal; }
+    div.green-radio input[type="radio"] + label:hover {
+      cursor: pointer; }
+  div.green-radio input[type="radio"]:checked ~ .check {
+    border: 2px solid #8ec21f; }
+    div.green-radio input[type="radio"]:checked ~ .check:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #8ec21f;
+      border-radius: 50%;
+      top: 5px;
+      right: 5px; }
+
 .time-day {
-  margin-top: 40px; }
+  margin-top: 34.5px; }
   .time-day p {
     font-size: 22px;
-    font-weight: bold;
-    color: #888; }
+    color: #888;
+    margin-bottom: 17.5px; }
   .time-day input[type="text"] {
     width: 420px;
-    height: 78px;
-    border-radius: 5px !important;
+    height: 80px;
+    border-radius: 4px !important;
     font-size: 34px;
-    margin-right: 26px; }
+    margin-right: 20px; }
     .time-day input[type="text"] ~ span.input-group-addon {
       background-color: #f3efe9;
-      width: 109px;
+      width: 119px;
+      height: 80px;
       border: 5px solid #ded3c2;
       border-radius: 5px;
       background: url("../img/calendar.png") no-repeat center; }
     .time-day input[type="text"] + span.input-group-addon:last-child:focus {
       background: red; }
 
-.tick-brow {
-  margin-top: 38px; }
-  .tick-brow p {
-    font-size: 22px;
-    font-weight: bold;
-    color: #888; }
-  .tick-brow div.tick-radio {
-    display: inline-block; }
-    .tick-brow div.tick-radio:first-child {
-      margin-right: 22px; }
-
-.contact-brow {
-  font-weight: bold;
-  font-size: 22px;
-  margin-top: 40px;
-  color: #888; }
-  .contact-brow div.check-radio:not(:last-child) {
-    margin-bottom: 20px; }
-
 .number-serial {
-  margin-top: 30px; }
+  margin-top: 34.5px; }
   .number-serial p {
-    font-weight: bold;
     font-size: 22px;
-    color: #888; }
+    color: #888;
+    margin-bottom: 17.5px; }
   .number-serial input[type="text"] {
     width: 160px;
-    height: 78px;
+    height: 80px;
     font-size: 34px; }
   .number-serial span {
     display: inline-block;
-    margin: 0 14px; }
+    color: #836441;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px; }
   .number-serial button {
+    display: inherit;
     width: 160px;
-    height: 78px;
+    height: 80px;
     border: 5px solid #e4dbcd;
     background-color: #f3efe9;
     border-radius: 5px;
-    margin-left: 28px; }
+    margin-left: 28px;
+    color: #836442;
+    float: right; }
   .number-serial p:last-of-type {
-    margin-top: 20px;
+    margin-top: 14.5px;
     color: #916a41;
-    font-size: 22px; }
+    font-size: 22px;
+    font-weight: normal; }
 
 .both-clear {
   clear: both; }
 
 .address-brow {
-  margin-top: 50px; }
+  margin-top: 40px; }
   .address-brow input[type="text"], .address-brow select {
-    width: 418px;
-    height: 78px;
+    width: 420px;
+    height: 80px;
     font-size: 34px; }
+  .address-brow p {
+    margin-bottom: 15.5px; }
   .address-brow div.add-brow-row {
     margin-bottom: 20px; }
   .address-brow label {
@@ -262,20 +315,32 @@ section div.title-head {
     margin-left: 74px; }
 
 .mail-row {
-  margin-top: 38px; }
-  .mail-row p.title-register {
-    margin-bottom: 18px; }
+  margin-top: 35.5px; }
+  .mail-row p {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 14.5px; }
+  .mail-row input[type="text"] {
+    width: 560px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px; }
   .mail-row div.tick-radio {
     display: inline-block; }
-    .mail-row div.tick-radio:first-child {
-      margin-right: 20px;
-      margin-left: 20px; }
+  .mail-row #tick1 {
+    margin-left: 16px;
+    float: right; }
+  .mail-row label {
+    font-size: 22px;
+    color: #888;
+    font-weight: 400; }
 
 .phone-brow {
   margin-top: 38px; }
   .phone-brow input[type="text"] {
     width: 560px;
-    height: 78px;
+    height: 80px;
     margin-top: 8px;
     font-size: 34px; }
   .phone-brow span {
@@ -285,27 +350,28 @@ section div.title-head {
     font-size: 22px; }
 
 .option-brow {
-  margin-top: 32px; }
+  margin-top: 35.5px; }
   .option-brow p.title-register {
-    margin-bottom: 18px; }
+    margin-bottom: 14.5px; }
   .option-brow .checkbox-row {
     width: 560px;
-    height: 78px; }
+    height: 80px; }
   .option-brow div.checkbox-row:not(:last-child) {
     margin-bottom: 20px; }
 
 .btn-register {
-  margin-top: 48px; }
+  margin-top: 49px; }
   .btn-register button {
     display: block;
-    width: 590px;
+    width: 599px;
     height: 80px;
     border-radius: 5px;
     font-size: 26px;
     font-weight: bold;
     border: 5px solid #e4dbce;
     background-color: #f3efe9;
-    color: #826444; }
+    color: #826444;
+    margin: 0 auto; }
     .btn-register button:first-child {
       margin-bottom: 20px; }
     .btn-register button:last-child {
@@ -320,7 +386,7 @@ footer {
   position: relative;
   border-top: 2px solid #c3000b; }
   footer p {
-    margin: 18px;
+    margin: 16.5px;
     font-size: 18px;
     color: #916a41; }
   footer .f-block {
@@ -361,40 +427,6 @@ footer {
         padding-bottom: 18px;
         font-size: 16px;
         color: #916a41; }
-
-div.green-radio .check {
-  display: block;
-  position: relative;
-  border: 2px solid #ddd;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  top: -56px;
-  left: 14px;
-  z-index: -5; }
-div.green-radio input[type="radio"] {
-  display: none; }
-  div.green-radio input[type="radio"] + label {
-    display: block;
-    padding: 22px 0;
-    padding-left: 52px;
-    color: #777;
-    font-size: 24px;
-    letter-spacing: -1px;
-    font-weight: normal; }
-    div.green-radio input[type="radio"] + label:hover {
-      cursor: pointer; }
-  div.green-radio input[type="radio"]:checked ~ .check {
-    border: 2px solid #8ec21f; }
-    div.green-radio input[type="radio"]:checked ~ .check:before {
-      content: '';
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      background-color: #8ec21f;
-      border-radius: 50%;
-      top: 3px;
-      right: 3px; }
 
 .checkbox-row input[type="checkbox"] {
   display: none; }

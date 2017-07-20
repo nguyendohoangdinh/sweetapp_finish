@@ -1,7 +1,7 @@
 $border-color: #916a41;
 $font-color: #888;
 .border-input {
-  border: 1px solid #a8a8a8;
+  border: 1px solid #888;
   border-radius: 4px;
 }
 .mobile-container {
@@ -15,7 +15,7 @@ $font-color: #888;
 .title{
   font-size: 22px;
   color: $font-color;
-  font-weight: bold;
+  // font-weight: bold;
 }
 .weight-box{
   width: 560px;
@@ -122,28 +122,33 @@ section {
     }
   }
 }
+.content-info{
+  @extend.weight-box;
+}
 .brow-content {
   @extend.weight-box;
   p.title-register {
     color: $font-color;
     font-size: 22px;
     margin-top: 25.5px;
-    margin-bottom: 11px;
+    margin-bottom: 0;
   }
   .id-register {
-      margin-bottom: 18px;
-      .content-id {
+      .content-name {
         display: inline-block;
         &:not(:last-child) {
           margin-right: 16px;
         }
         span {
-          color: $font-color;
+          display: inherit;
+          color: #888;
           font-size: 22px;
+          padding-bottom: 5.5px;
+          padding-top:15.5px;
         }
         input {
-          width: 268px;
-          height: 78px;
+          width: 270px;
+          height: 80px;
           @extend .border-input;
           font-size: 34px;
           color: #555;
@@ -152,13 +157,13 @@ section {
     }
   .check-radio {
     width: 560px;
-    height: 78px;
+    height: 80px;
     @extend .border-input;
     border-radius: 5px;
   }
   .tick-radio {
-    width: 266px;
-    height: 78px;
+    width: 270px;
+    height: 80px;
     @extend .border-input;
   }
   width: 560px;
@@ -168,17 +173,16 @@ section {
     & > p {
       font-size: 22px;
       color: $font-color;
-      margin-bottom: 20px;
-      font-weight: bold;
+      // font-weight: bold;
     }
   }
 }
 .id-class {
-  margin-top: 38px;
+  margin-top: 36.5px;
   color: $font-color;
   p {
-    margin-bottom: 16px;
-    font-weight: bold;
+    margin-bottom: 14.5px;
+    // font-weight: bold;
     font-size: 22px;
     color: $font-color;
   }
@@ -187,11 +191,13 @@ section {
   input[type="text"] {
     @extend .border-input;
     width: 560px;
-    height: 78px;
-    font-size: 34px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   div.check-radio {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   label{
     font-size: 22px;
@@ -199,28 +205,113 @@ section {
     font-weight: 400;
   }
   .title{
-    font-weight: bold;
+    // font-weight: bold;
     color: $font-color;
     font-size: 22px;
   }
 }
-.time-day {
-  margin-top: 40px;
+.tick-brow {
   p{
     font-size: 22px;
-    font-weight: bold;
+    // font-weight: bold;
     color: $font-color;
+    margin-bottom:14.5px;
+  }
+  margin-top: 35.5px;
+  .tick-radio lable{
+  }
+  input[type="text"] {
+    @extend .border-input;
+    width: 560px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  div.tick-radio {
+    display: inline-block;
+  }
+  #tick1{
+    margin-left:16px;
+    float:right;
+  }
+  label{
+    font-size: 22px;
+    color: $font-color;
+    font-weight: 400;
+  }
+}
+.contact-brow {
+  // font-weight: bold;
+  font-size: 22px;
+  margin-top: 35.5px;
+  color: $font-color;
+  p{
+    margin-bottom: 15.5px;
+  }
+  div.check-radio:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+div.green-radio {
+  .check {
+    display: block;
+    position: relative;
+    border: 2px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -60px;
+    left: 14px;
+    z-index: -5;
+  }  
+  input[type="radio"] {
+    display: none;
+    & + label {
+      display: block;
+      padding: 24px 0;
+      padding-left: 60px;
+      color: #777;
+      font-size: 24px;
+      font-weight: normal;
+      &:hover {
+        cursor: pointer;
+      };
+    }
+    &:checked ~ .check{
+      border: 2px solid #8ec21f;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #8ec21f;
+        border-radius: 50%;
+        top: 5px;
+        right: 5px;
+      };
+    };
+  }
+}
+.time-day {
+  margin-top: 34.5px;
+  p{
+    font-size: 22px;
+    // font-weight: bold;
+    color: $font-color;
+    margin-bottom: 17.5px;
   }
   input[type="text"] {
     width: 420px;
-    height: 78px;
+    height: 80px;
     @extend .border-input;
-    border-radius: 5px !important;
+    border-radius: 4px !important;
     font-size: 34px;
-    margin-right: 26px;
+    margin-right: 20px;
     & ~ span.input-group-addon {
       background-color: #f3efe9;
-      width: 109px;
+      width: 119px;
+      height: 80px;
       border: 5px solid #ded3c2;
       border-radius: 5px;
       background: url("../img/calendar.png") no-repeat center;
@@ -231,73 +322,60 @@ section {
       }
   }
 }
-.tick-brow {
-  p{
-    font-size: 22px;
-    font-weight: bold;
-    color: $font-color;
-  }
-  margin-top: 38px;
-  div.tick-radio {
-    display: inline-block;
-    &:first-child{
-      margin-right: 22px;
-    };
-  }
-}
-.contact-brow {
-  font-weight: bold;
-  font-size: 22px;
-  margin-top: 40px;
-  color: $font-color;
-  div.check-radio:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 .number-serial {
   p{
-    font-weight: bold;
+    // font-weight: bold;
     font-size: 22px;
     color: $font-color;
+    margin-bottom: 17.5px;
   }
-  margin-top: 30px;
+  margin-top: 34.5px;
   input[type="text"] {
     width: 160px;
-    height: 78px;
+    height: 80px;
     @extend .border-input;
     font-size: 34px;
   }
   span {
     display: inline-block;
-    margin: 0 14px;
+    color: #836441;
+    // font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   button {
+    display: inherit;
     width: 160px;
-    height: 78px;
+    height: 80px;
     border: 5px solid #e4dbcd;
     background-color: #f3efe9;
     border-radius: 5px;
     margin-left: 28px;
+    color: #836442;
+    float:right;
   }
   p:last-of-type {
-    margin-top: 20px;
+    margin-top: 14.5px;
     color: $border-color;
     font-size: 22px;
+    font-weight: normal;
   }
 }
 .both-clear {
   clear: both;
 }
 .address-brow {
-  margin-top: 50px;
+  margin-top: 40px;
   input[type="text"], select {
-    width: 418px;
-    height: 78px;
+    width: 420px;
+    height: 80px;
     @extend .border-input;
     font-size: 34px;
   }
   p{
     @extend.title;
+    margin-bottom: 15.5px;
   }
   div.add-brow-row {
     margin-bottom: 20px;
@@ -330,19 +408,34 @@ section {
   }
 }
 .mail-row {
-  p{
-    @extend.title;
+   p{
+    font-size: 22px;
+    // font-weight: bold;
+    color: $font-color;
+    margin-bottom:14.5px;
   }
-  margin-top: 38px;
-  p.title-register {
-    margin-bottom: 18px;
+  margin-top: 35.5px;
+  .tick-radio lable{
+  }
+  input[type="text"] {
+    @extend .border-input;
+    width: 560px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   div.tick-radio {
     display: inline-block;
-    &:first-child{
-      margin-right: 20px;
-      margin-left: 20px;
-    };
+  }
+  #tick1{
+    margin-left:16px;
+    float:right;
+  }
+  label{
+    font-size: 22px;
+    color: $font-color;
+    font-weight: 400;
   }
 }
 .phone-brow {
@@ -352,7 +445,7 @@ section {
   margin-top: 38px;
   input[type="text"] {
     width: 560px;
-    height: 78px;
+    height: 80px;
     @extend .border-input;
     margin-top: 8px;
     font-size: 34px;
@@ -368,13 +461,13 @@ section {
   p{
     @extend.title;
   }
-  margin-top: 32px;
+  margin-top: 35.5px;
   p.title-register {
-    margin-bottom: 18px;
+    margin-bottom: 14.5px;
   }
   .checkbox-row {
     width: 560px;
-    height: 78px;
+    height: 80px;
     @extend .border-input;
   }
   div.checkbox-row:not(:last-child) {
@@ -382,10 +475,10 @@ section {
   }
 }
 .btn-register{
-  margin-top: 48px;
+  margin-top: 49px;
   button {
     display: block;
-    width: 590px;
+    width: 599px;
     height: 80px;
     border-radius: 5px;
     font-size: 26px;
@@ -393,6 +486,7 @@ section {
     border: 5px solid #e4dbce;
     background-color: #f3efe9;
     color: #826444;
+    margin:0 auto;
     &:first-child{
       margin-bottom: 20px;  
       
@@ -412,7 +506,7 @@ footer {
   position: relative;
   border-top: 2px solid #c3000b;
   p {
-    margin: 18px;
+    margin: 16.5px;
     font-size: 18px;
     color: $border-color;
   }
@@ -463,47 +557,6 @@ footer {
         color: $border-color;
       }
     }
-  }
-}
-div.green-radio {
-  .check {
-    display: block;
-    position: relative;
-    border: 2px solid #ddd;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    top: -56px;
-    left: 14px;
-    z-index: -5;
-  }  
-  input[type="radio"] {
-    display: none;
-    & + label {
-      display: block;
-      padding: 22px 0;
-      padding-left: 52px;
-      color: #777;
-      font-size: 24px;
-      letter-spacing: -1px;
-      font-weight: normal;
-      &:hover {
-        cursor: pointer;
-      };
-    }
-    &:checked ~ .check{
-      border: 2px solid #8ec21f;
-      &:before{
-        content: '';
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        background-color: #8ec21f;
-        border-radius: 50%;
-        top: 3px;
-        right: 3px;
-      };
-    };
   }
 }
 .checkbox-row {

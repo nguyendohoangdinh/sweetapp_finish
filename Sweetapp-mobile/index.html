@@ -3,6 +3,9 @@
 <head>
   <title>Sweets</title>
   <!-- Latest compiled and minified CSS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css" />
@@ -31,26 +34,26 @@
       <h1>会員情報</h1>
       <button class="pencil"><img src="img/pencil.png" alt=""><span>編集</span></button>
     </div>
-    <div>
+    <div class="content-info">
       <div class="brow-content">
         <div class="name-register">
           <p class="title-register">お名前</p>
           <div class="id-register">
-            <div class="content-id">
+            <div class="content-name">
               <span>姓</span><br>
               <input type="text" name="" class="input-name">
             </div>
-            <div class="content-id">
+            <div class="content-name">
               <span>名</span><br>
               <input type="text" name="">
             </div>
           </div>
-          <div class="info-register">
-            <div class="content-info">
+          <div class="id-register">
+            <div class="content-name">
               <span>セイ</span><br>
               <input type="text" name="">
             </div>
-            <div class="content-info">
+            <div class="content-name">
               <span>メイ</span><br>
               <input type="text" name="">
             </div>
@@ -79,7 +82,7 @@
         </div>
         <div class="tick-brow">
           <p class="title-id">性別</p>
-          <div class="tick-radio green-radio">
+          <div class="tick-radio green-radio" id="tick1">
             <input type="radio" name="gender" id="gender1"><label for="gender1">男性</label>
             <div class="check"></div>
           </div>
@@ -167,20 +170,20 @@
         </div>
         <div class="mail-row">
           <p class="title-id">メール受信配信</p>
-          <div class="tick-radio green-radio">
+          <div class="tick-radio green-radio" id="tick1">
             <input type="radio" name="mail" id="mail1"><label for="mail1">受け取る</label>
             <div class="check"></div>
           </div>
-          <div class="tick-radio green-radio">
+          <div class="tick-radio green-radio" id="tick2">
             <input type="radio" name="mail" id="mail2" checked><label for="mail2">受け取らない</label>
             <div class="check"></div>
           </div>
         </div>
       </div>
-      <div class="btn-register">
-        <button>戻る</button>
-        <button type="submit" id="infomation-member">会員情報を変更する</button>
-      </div>
+    </div>
+    <div class="btn-register mobile-container">
+      <button>戻る</button>
+      <button type="submit" id="infomation-member">会員情報を変更する</button>
     </div>
   </section>      
   <footer class="mobile-container">
