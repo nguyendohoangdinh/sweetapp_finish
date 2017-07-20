@@ -7,7 +7,7 @@ $(document).ready(function(){
       previous: "fa fa-chevron-left"
     }
   });
-  $('.container-1').click(function(){
+  $('.pagetop').click(function(){
     $("html, body").animate({ scrollTop: 10 }, 100);
     return false;
   });
